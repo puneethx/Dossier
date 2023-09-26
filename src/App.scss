@@ -1,8 +1,6 @@
 .app{
   margin: 0;
-  font-size: 40px;
   width: 100%;
-  height: 100vh;
   background: #0F172A;
   color: whitesmoke;
   position: relative;
@@ -28,4 +26,14 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #2e8a7f;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #0F172A;
+  background: #5eead4;
+}
+
+::selection {
+  color: #0F172A;
+  background: #5eead4;
 }

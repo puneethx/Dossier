@@ -1,4 +1,6 @@
 .main{
+  position: relative;
+  
     &::before {
       --size: 0;
       content: '';
