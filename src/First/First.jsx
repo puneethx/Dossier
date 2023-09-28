@@ -7,6 +7,10 @@ import Test2 from "../assets/test2.png"
 import About from "../assets/about2.png"
 import Skill from "../assets/horskills.png"
 import Skill2 from "../assets/verskills.png"
+import Puneeth from "../assets/puneeth.svg";
+import Reddy from "../assets/reddy.svg";
+import Projects from "../assets/projects.svg";
+import Projects2 from "../assets/projects2.svg";
 
 
 const First = () => {
@@ -14,6 +18,8 @@ const First = () => {
     scrollRotate();
     scrollTranslate();
     aboutTranslate();
+    skillsTranslate();
+    projectsTranslate();
   };
   
   function scrollRotate() {
@@ -23,6 +29,8 @@ const First = () => {
 
   function aboutTranslate() {
     let forY = window.scrollY*-2.05;
+    let cos = window.scrollY;
+    console.log(cos);
     if(forY > -1100){
       forY == forY;
     }
@@ -31,19 +39,47 @@ const First = () => {
     }
     let about = document.getElementById("test2");
     about.style.transform = "translateX(" + forY + "px)";
+  }
+
+  function skillsTranslate() {
+    let forS = window.scrollY*-1.95;
+    if(forS > -2173){
+      forS == forS;
+    }
+    else{
+      forS = -2173;
+    }
     let horskill = document.getElementById("horskill");
-    horskill.style.transform = "translateX(" + forY + "px)";
+    horskill.style.transform = "translateX(" + forS + "px)";
+  }
+
+  function projectsTranslate() {
+    let forP = window.scrollY*-1.95;
+    if(forP > -2173){
+      forP == forP;
+    }
+    else{
+      forP = -2173;
+    }
+    let horpro = document.getElementById("horpro");
+    horpro.style.transform = "translateX(" + forP + "px)";
   }
 
   function scrollTranslate() {
-    let line = document.getElementById("verline");
-    line.style.transform = "translateY(" + window.scrollY*2.05 + "px)";
+    let horline = document.getElementById("horline");
+    horline.style.transform = "translateX(" + window.scrollY*2.05 + "px)";
     let line2 = document.getElementById("verline2");
     line2.style.transform = "translateY(" + window.scrollY*-1.5 + "px)";
     let abtimg = document.getElementById("abtimg");
     abtimg.style.transform = "translateY(" + window.scrollY*-1.30 + "px)";
     let verskill = document.getElementById("verskill");
-    verskill.style.transform = "translateY(" + window.scrollY*-1.30 + "px)"; 
+    verskill.style.transform = "translateY(" + window.scrollY*-1.30 + "px)";
+    let verpro = document.getElementById("verpro");
+    verpro.style.transform = "translateY(" + window.scrollY*-1.30 + "px)"; 
+    let puneeth = document.getElementById("puneeth");
+    puneeth.style.transform = "translateY(" + window.scrollY*-0.75 + "px)"; 
+    let reddy = document.getElementById("reddy");
+    reddy.style.transform = "translateY(" + window.scrollY*-1.5 + "px)"; 
   }
   return (
     <div className='first'>
@@ -58,8 +94,12 @@ const First = () => {
       <img className="horskill" src={Skill} id="horskill" alt="skill" />
       <img className="verskill" src={Skill2} id="verskill" alt="skill" />
       <img className='horline2' src={Horline} alt='img'></img>
-      <img className='verline' id="verline" src={Verline} alt='img'></img>
+      <img className='horline' id="horline" src={Horline} alt='img'></img>
       <img className='verline2' id="verline2" src={Verline} alt='img'></img>
+      <img className="puneeth" id="puneeth" src={Puneeth} alt="puneeth" />
+      <img className="reddy" id="reddy" src={Reddy} alt="reddy" />
+      <img className="verpro" id="verpro" src={Projects2} alt="verpro"></img>
+      <img className="horpro" id="horpro" src={Projects} alt="horpro"></img>
     </div>
   )
 }

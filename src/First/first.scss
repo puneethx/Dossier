@@ -25,11 +25,7 @@
         height: 20px;
         object-fit: contain;
         z-index: 3;
-    }
-    .X2{
-        position: absolute;
-        top: 40.25vh;
-        left: 14.5vw;
+        transition: 0.2s;
     }
     .verline{
         position: absolute;
@@ -41,23 +37,47 @@
         z-index: 3;
         
     }
+    .horline{
+        position: absolute;
+        top: 95vh;
+        left: 14vw;
+        z-index: 3;
+        transition: 0.1s;
+    }
     .abtimg{
         position: absolute;
-        top: 100vh;
+        top: 110vh;
         right: 0;
         width: 6vw;
+        transition: 0.2s;
     }
     .verskill{
         position: absolute;
-        top: 100vh;
+        top: 330vh;
         right: 0;
         width: 6vw;
+        transition: 0.2s;
+    }
+    .verpro{
+        position: absolute;
+        top: 330vh;
+        right: 0;
+        width: 6vw;
+        transition: 0.2s;
     }
     .horskill{
         position: absolute;
-        top: 100vh;
-        left: 80vw;
+        top: 193vh;
+        left: 150vw;
         height: 10vh;
+        transition: 0.2s;
+    }
+    .horpro{
+        position: absolute;
+        top: 193vh;
+        left: 150vw;
+        height: 10vh;
+        transition: 0.2s;
     }
     .verline2{
         position: absolute;
@@ -67,6 +87,7 @@
         width: 0.2vh;
         object-fit: cover;
         z-index: 3;
+        transition: 0.15s;
     }
     .about{
         .test2{
@@ -74,13 +95,24 @@
             top: 100vh;
             left: 80vw;
             height: 10vh;
+            transition: 0.2s;
         }
     }
-    .horline{
+    .puneeth{
         position: absolute;
-        top: 41vh;
-        left: 16vw;
+        right: 3vw;
         z-index: 2;
+        width: 30vw;
+        top: 25vh;
+        transition: 0.3s;
+    }
+    .reddy{
+        position: absolute;
+        right: 3vw;
+        z-index: 2;
+        width: 30vw;
+        top: 42vh;
+        transition: 0.3s;
     }
     .horline2{
         margin-left: 200vw;

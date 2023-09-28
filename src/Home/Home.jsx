@@ -3,9 +3,14 @@ import Insta from "../assets/instagram.svg"
 import Github from "../assets/github.svg"
 import Linkedin from "../assets/linkedin.svg"
 import Mail from "../assets/twitterx.svg"
+import {SiJavascript,SiPython,SiTypescript,SiReact,
+  SiAngularjs,SiBootstrap, SiSvelte,SiTailwindcss,SiMongodb,SiMysql} from "react-icons/si"
+import {FaJava} from "react-icons/fa"
+import {FaGolang,FaNodeJs} from "react-icons/fa6"
+import {TbBrandNextjs} from "react-icons/tb"
+
 
 const Home = () => {
-  
   return (
     <div className="home">
       <div className="left">
@@ -25,7 +30,7 @@ const Home = () => {
             </ul>
           </div>
           <div className="social">
-            <a href="https://www.instagram.com/puneethx/" target="_blank"><img className='insta' id="insta" src={Insta} alt='img'></img></a>
+            <a id="instagram" href="https://www.instagram.com/puneethx/" target="_blank"><img className='insta' id="insta" src={Insta} alt='img'></img></a>
             <a href="https://www.linkedin.com/in/puneeth-reddy-75069824b/" target="_blank"><img className='linkedin' id="linkedin" src={Linkedin} alt='img'></img></a>
             <a href="https://www.x.com/puneeth2x" target="_blank"><img className='mail' id="mail" src={Mail} alt='img'></img></a>
             <a href="https://www.github.com/puneethx/" target="_blank"><img className='github' id="github" src={Github} alt='img'></img></a>
@@ -35,47 +40,57 @@ const Home = () => {
       <div className="right">
         <div className="about" id="About">
         <span>
-          Hello! I'm Puneeth Reddy, a 5th Semester (3rd Year) student at Vellore Institute of Technology
-          Organized and dependable candidate successful at managing 
+          Hello! I'm Puneeth Reddy, a dedicated and motivated student currently in my 6th Semester (3rd Year) at Vellore Institute of Technology,
+          pursuing b.tech in Computer Science Engineering. <br/><br/>
+          With a passion for technology and deep interest in web development, I have started learning to become a proficient full-stack web developer.
+          My main objective is to create exceptional websites that not only function flawlessly but also provide a delightful user experience through intuitive and aesthetically pleasing designs.
+          I've been marked a strong commitment to learning new technologies, frame works and methodologies. 
+          <br/>I genuinely think that flexibility is the key to success in web development, and I am constantly keen to investigate and implement cutting-edge solutions into my projects.
           <br/>
-          multiple priorities with a positive attitude. Willingness to take on
           <br/>
-          added responsibilities to meet team goals. Detail-oriented team
-          <br/>
-          member with strong organizational skills. Ability to handle multiple
-
-          projects simultaneously with a high degree of accuracy.
-
-
-          Experienced Web Developer adept in all Stages Of web development.
-
-          Knowledgeable in user interface, testing, and debugging processes,
-
-          Bringing forth expertise in design, installation, testing and
-
-          maintenance of web systems.
-          <br/>
-          • Applied emerging technologies to update and maintain site
-
-          applicability. 
-          <br/>
-          • Implemented content management and security
-          resource tutorials to assist end-user training.
-          • Provided security maintenance and patching on website interface
-          to maintain viability after launch.
-          <br/>
-          • Experienced UI/UX
-          <br/>
-          • Worked closely with UX and product teams to define visual and
-          functional requirements.
-          <br/>
-          • Used wireframes, mock-ups and prototypes myself to establish
-
-          user interface design and architecture
+          As I progress in my academic journey, I am actively seeking opportunities to apply my skills and knowledge in real-world settings.
+          I've created several websites that reflect my dedication to the craft of web development, and I encourage you to explore these projects in more detail in Projects section.
         </span>
         </div>
-        <div className="skills">
-          
+        <div className="mainskill">
+          <div className="skills">
+              <div className="pro">
+                <span className="head">Programming Languages</span><br/>
+                <span className="body">Languages that I have practiced and have hands-on experience with</span>
+                <div className="icons">
+                  <div className="icon"><SiJavascript/></div>
+                  <div className="icon"><SiTypescript/></div>
+                  <div className="icon"><FaJava/></div>
+                  <div className="icon"><FaGolang/></div>
+                  <div className="icon"><SiPython/></div>
+                </div>
+              </div>
+          </div>
+          <div className="skills">
+              <div className="pro">
+                <span className="head">Frameworks & Libraries</span><br/>
+                <span className="body">Libraries and Frameworks that I commonly work with</span>
+                <div className="icons">
+                  <div className="icon"><SiReact/></div>
+                  <div className="icon"><SiAngularjs/></div>
+                  <div className="icon"><SiBootstrap/></div>
+                  <div className="icon"><SiSvelte/></div>
+                  <div className="icon"><TbBrandNextjs/></div>
+                  <div className="icon"><FaNodeJs/></div>
+                  <div className="icon"><SiTailwindcss/></div>
+                </div>
+              </div>
+          </div>
+          <div className="skills">
+              <div className="pro">
+                <span className="head">Databases</span><br/>
+                <span className="body">Databases that I have practiced and have hands-on experience with</span>
+                <div className="icons">
+                  <div className="icon"><SiMongodb/></div>
+                  <div className="icon"><SiMysql/></div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>

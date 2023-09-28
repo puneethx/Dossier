@@ -80,23 +80,57 @@
       margin-left: 34.5vw;
       color: #9aabc3;
       .about{
-        padding-top: 10vh;
+        padding-top: 14vh;
       }
-      .skills{
-        margin-top: 15vh;
-        height: 40vh;
-        border-radius: 6px;
-        // background-color: rgba(28, 40, 70, 0.4);
-        // border-top: 1px solid rgba(66, 73, 109, 0.55);
-        // -webkit-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
-        // -moz-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
-        // box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
-        &:hover{
-          background-color: rgba(28, 40, 70, 0.4);
-          border-top: 1px solid rgba(66, 73, 109, 0.55);
-          -webkit-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
-          -moz-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
-          box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+      .mainskill{
+        margin-top: 22vh;
+        .skills{
+          border-radius: 6px;
+          padding-bottom: 1vh;
+          width: 34vw;
+          border-top: 1px solid transparent;
+          .pro{
+            margin: 20px;
+            .head{
+              font-weight: bold;
+              color: #e1e7ef ;
+            }
+            .body{
+              font-size: 13px;
+              color: #5f6e85;
+            }
+            .icons{
+              display: flex;
+              gap: 50px;
+              margin-top: 7vh;
+              margin-left: 1.5vw;
+              flex-wrap: wrap;
+              margin-bottom: 7vh;
+              .icon{
+                font-size: 48px !important;
+                &:hover{
+                  color: #62e6d2;
+                }
+              }
+            }
+          }
+          // background-color: rgba(28, 40, 70, 0.4);
+          // border-top: 1px solid rgba(66, 73, 109, 0.55);
+          // -webkit-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          // -moz-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          // box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          &:hover{
+            background-color: rgba(28, 40, 70, 0.4);
+            border-top: 1px solid rgba(66, 73, 109, 0.55);
+            -webkit-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+            -moz-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+            box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+            .pro{
+              .head{
+                color: #62e6d2;
+              }
+            }
+          }
         }
       }
     }
