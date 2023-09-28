@@ -17,8 +17,6 @@ const Main = () => {
     <div className='main'>
         <First/>
         <Home/>
-        <First/>
-        <Home/>
     </div>
   )
 }

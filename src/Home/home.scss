@@ -25,29 +25,46 @@
                 color:#8896ab;
                 line-height: 24px;
             }
+            
             .menu{
               margin-top: 7vh;
               font-size: 14px;
               ul{
-                display: flex;
-                flex-direction: column;
-                .about{
-                  .box{
-                    width: 5vw;
-                    height: 0.2vh;
-                    background-color: white;
-                  }
-                  &:hover{
-                    .box{
-                      width: 6vw;
-                    }
-                  }
-                }
                 li{
                   list-style: none;
                   line-height: 40px;
-                  display: flex;
-                  align-items: center;
+                  color: #5f6e85;
+                  transition: 0.2s;
+                  a{
+                    text-decoration: none;
+                    color: inherit;
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    gap: 0.5vw;
+                    .line{
+                      width: 40px;
+                      height: 1.1px;
+                      transition: 0.25s;
+                      background-color: #5f6e85;
+                    }
+                  }
+
+                  &:hover{
+                    color: #f5f9ff;
+                    .box{
+                      left: 0;
+                    }
+                    a{
+                      .line{
+                        width: 60px;
+                        background-color: #f5f9ff;
+                      }
+                    }
+                  }
+                  &:active{
+                    color: #f5f9ff;
+                  }
                 }
               }
             }
@@ -60,10 +77,27 @@
         }
     }
     .right{
-      margin-left: 30vw;
+      margin-left: 34.5vw;
       color: #9aabc3;
       .about{
-        padding-top: 20vh;
+        padding-top: 10vh;
+      }
+      .skills{
+        margin-top: 15vh;
+        height: 40vh;
+        border-radius: 6px;
+        // background-color: rgba(28, 40, 70, 0.4);
+        // border-top: 1px solid rgba(66, 73, 109, 0.55);
+        // -webkit-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+        // -moz-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+        // box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+        &:hover{
+          background-color: rgba(28, 40, 70, 0.4);
+          border-top: 1px solid rgba(66, 73, 109, 0.55);
+          -webkit-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          -moz-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+        }
       }
     }
 }
