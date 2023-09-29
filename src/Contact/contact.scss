@@ -1,0 +1,25 @@
+.contact{
+    margin: 20vh 20px 0vh 20px;
+    font-weight: bold;
+    color: #e1e7ef;
+    .title{
+        margin-bottom: 4vh;
+    }
+    .details{
+        font-weight: 400;
+        font-size: 14px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        .flex{
+            display: flex;
+            align-items: center;
+            gap: 0.5vw;
+            color: #5f6e85;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

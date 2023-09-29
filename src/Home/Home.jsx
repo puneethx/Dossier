@@ -3,12 +3,11 @@ import Insta from "../assets/instagram.svg"
 import Github from "../assets/github.svg"
 import Linkedin from "../assets/linkedin.svg"
 import Mail from "../assets/twitterx.svg"
-import {SiJavascript,SiPython,SiTypescript,SiReact,
-  SiAngularjs,SiBootstrap, SiSvelte,SiTailwindcss,SiMongodb,SiMysql} from "react-icons/si"
-import {FaJava} from "react-icons/fa"
-import {FaGolang,FaNodeJs} from "react-icons/fa6"
-import {TbBrandNextjs} from "react-icons/tb"
 
+import Skill from "../Skillmain/Skillmain";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
@@ -38,60 +37,10 @@ const Home = () => {
         </div>
       </div>
       <div className="right">
-        <div className="about" id="About">
-        <span>
-          Hello! I'm Puneeth Reddy, a dedicated and motivated student currently in my 6th Semester (3rd Year) at Vellore Institute of Technology,
-          pursuing b.tech in Computer Science Engineering. <br/><br/>
-          With a passion for technology and deep interest in web development, I have started learning to become a proficient full-stack web developer.
-          My main objective is to create exceptional websites that not only function flawlessly but also provide a delightful user experience through intuitive and aesthetically pleasing designs.
-          I've been marked a strong commitment to learning new technologies, frame works and methodologies. 
-          <br/>I genuinely think that flexibility is the key to success in web development, and I am constantly keen to investigate and implement cutting-edge solutions into my projects.
-          <br/>
-          <br/>
-          As I progress in my academic journey, I am actively seeking opportunities to apply my skills and knowledge in real-world settings.
-          I've created several websites that reflect my dedication to the craft of web development, and I encourage you to explore these projects in more detail in Projects section.
-        </span>
-        </div>
-        <div className="mainskill">
-          <div className="skills">
-              <div className="pro">
-                <span className="head">Programming Languages</span><br/>
-                <span className="body">Languages that I have practiced and have hands-on experience with</span>
-                <div className="icons">
-                  <div className="icon"><SiJavascript/></div>
-                  <div className="icon"><SiTypescript/></div>
-                  <div className="icon"><FaJava/></div>
-                  <div className="icon"><FaGolang/></div>
-                  <div className="icon"><SiPython/></div>
-                </div>
-              </div>
-          </div>
-          <div className="skills">
-              <div className="pro">
-                <span className="head">Frameworks & Libraries</span><br/>
-                <span className="body">Libraries and Frameworks that I commonly work with</span>
-                <div className="icons">
-                  <div className="icon"><SiReact/></div>
-                  <div className="icon"><SiAngularjs/></div>
-                  <div className="icon"><SiBootstrap/></div>
-                  <div className="icon"><SiSvelte/></div>
-                  <div className="icon"><TbBrandNextjs/></div>
-                  <div className="icon"><FaNodeJs/></div>
-                  <div className="icon"><SiTailwindcss/></div>
-                </div>
-              </div>
-          </div>
-          <div className="skills">
-              <div className="pro">
-                <span className="head">Databases</span><br/>
-                <span className="body">Databases that I have practiced and have hands-on experience with</span>
-                <div className="icons">
-                  <div className="icon"><SiMongodb/></div>
-                  <div className="icon"><SiMysql/></div>
-                </div>
-              </div>
-          </div>
-        </div>
+        <About/>
+        <Skill/>
+        <Projects/>
+        <Contact/>
       </div>
     </div>
   )

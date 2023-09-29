@@ -3,7 +3,7 @@ import Avatar from "../assets/avatar.png"
 import X from "../assets/x.svg"
 import Horline from "../assets/line-hor.svg"
 import Verline from "../assets/line-ver.svg"
-import Test2 from "../assets/test2.png"
+import Test2 from "../assets/test2.svg"
 import About from "../assets/about2.png"
 import Skill from "../assets/horskills.png"
 import Skill2 from "../assets/verskills.png"
@@ -55,11 +55,11 @@ const First = () => {
 
   function projectsTranslate() {
     let forP = window.scrollY*-1.95;
-    if(forP > -2173){
+    if(forP > -4261){
       forP == forP;
     }
     else{
-      forP = -2173;
+      forP = -4261;
     }
     let horpro = document.getElementById("horpro");
     horpro.style.transform = "translateX(" + forP + "px)";

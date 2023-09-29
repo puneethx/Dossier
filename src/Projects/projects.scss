@@ -1,0 +1,87 @@
+.projects{
+    margin-top: 22vh;
+    .project{
+        border-radius: 6px;
+        padding-bottom: 1vh;
+        margin-bottom: 2vh;
+        width: 34vw;
+        border-top: 1px solid transparent;
+        a{
+            text-decoration: none;
+        }
+        .pro{
+          margin: 20px;
+            .head{
+                font-weight: bold;
+                color: #e1e7ef ;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                position: relative;
+                .upright{
+                    position: absolute;
+                    transform: translate(4px,4px);
+                    transition: 0.2s;
+                    top: 0;
+                }
+              }
+            .body{
+                font-size: 13px;
+                color: #5f6e85;
+            }
+            .preview{
+                margin-top: 4vh;
+                margin-bottom: 4vh;
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 20vw;
+                    height: 100%;
+                    border-radius: 8px;
+                    border: 3px solid #1e2738;
+                    transition: 0.2s;
+                }
+            }
+            .tech{
+                color: #62e6d2;
+                font-size: 12px;
+                display: flex;
+                gap: 1vw;
+                flex-wrap: wrap;
+                .wrap{
+                    background-color: rgb(37, 72, 75,0.5);
+                    border-radius: 100px;
+                    span{
+                        padding: 12px;
+                        line-height: 2px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+          }
+
+        &:hover{
+          background-color: rgba(28, 50, 70, 0.4);
+          transition: 0.3s;
+          border-top: 1px solid rgba(66, 73, 109, 0.55);
+          -webkit-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          -moz-box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          box-shadow: 1px 1px 10px 0px rgba(15,23,42,1);
+          .pro{
+            .head{
+              color: #62e6d2;
+              .upright{
+                transform: translate(8px,0px);
+              }
+            }
+            .preview{
+                img{
+                    border: 3px solid #4e5665;
+                }
+            }
+          }
+        }
+      }
+}
