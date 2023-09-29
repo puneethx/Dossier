@@ -65,6 +65,13 @@
         width: 6vw;
         transition: 0.2s;
     }
+    .vercon{
+        position: absolute;
+        top: 1390vh;
+        right: 0;
+        width: 6vw;
+        transition: 0.2s;
+    }
     .horskill{
         position: absolute;
         top: 193vh;
@@ -76,6 +83,13 @@
         position: absolute;
         top: 353vh;
         left: 286vw;
+        height: 10vh;
+        transition: 0.2s;
+    }
+    .horcon{
+        position: absolute;
+        top: 670vh;
+        left: 416.5vw;
         height: 10vh;
         transition: 0.2s;
     }

@@ -11,7 +11,8 @@ import Puneeth from "../assets/puneeth.svg";
 import Reddy from "../assets/reddy.svg";
 import Projects from "../assets/projects.svg";
 import Projects2 from "../assets/projects2.svg";
-
+import Contact from "../assets/horcon.svg";
+import Contact2 from "../assets/vercon.svg";
 
 const First = () => {
   window.onscroll = function() {
@@ -65,6 +66,7 @@ const First = () => {
     horpro.style.transform = "translateX(" + forP + "px)";
   }
 
+
   function scrollTranslate() {
     let horline = document.getElementById("horline");
     horline.style.transform = "translateX(" + window.scrollY*2.05 + "px)";
@@ -75,7 +77,9 @@ const First = () => {
     let verskill = document.getElementById("verskill");
     verskill.style.transform = "translateY(" + window.scrollY*-1.30 + "px)";
     let verpro = document.getElementById("verpro");
-    verpro.style.transform = "translateY(" + window.scrollY*-1.30 + "px)"; 
+    verpro.style.transform = "translateY(" + window.scrollY*-1.30 + "px)";
+    let vercon = document.getElementById("vercon");
+    vercon.style.transform = "translateY(" + window.scrollY*-1.30 + "px)";  
     let puneeth = document.getElementById("puneeth");
     puneeth.style.transform = "translateY(" + window.scrollY*-0.75 + "px)"; 
     let reddy = document.getElementById("reddy");
@@ -100,6 +104,8 @@ const First = () => {
       <img className="reddy" id="reddy" src={Reddy} alt="reddy" />
       <img className="verpro" id="verpro" src={Projects2} alt="verpro"></img>
       <img className="horpro" id="horpro" src={Projects} alt="horpro"></img>
+      <img className="horcon" id="horcon" src={Contact} alt="horcon"></img>
+      <img className="vercon" id="vercon" src={Contact2} alt="vercon"></img>
     </div>
   )
 }
