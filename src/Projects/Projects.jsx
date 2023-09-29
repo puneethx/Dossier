@@ -10,7 +10,7 @@ import Pro5 from "../assets/pro5.png";
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id='Projects'>
         <div className="project">
             <a href="https://kkhomeneeds-v2.vercel.app/" target='_blank'>
                 <div className="pro">

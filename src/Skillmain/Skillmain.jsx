@@ -9,7 +9,7 @@ import "./skillmain.scss"
 
 const Skillmain = () => {
   return (
-    <div className="skillmain">
+    <div className="skillmain" id='Skills'>
           <div className="skills">
               <div className="pro">
                 <span className="head">Programming Languages</span><br/>

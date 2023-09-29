@@ -6,7 +6,7 @@ import {BsGithub} from "react-icons/bs"
 
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id='Contact'>
         <div className='title'><span>Feel free to Contact me</span></div>
         <div className="details">
             <div className="flex">
