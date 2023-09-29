@@ -64,6 +64,8 @@ const First = () => {
     }
     let horpro = document.getElementById("horpro");
     horpro.style.transform = "translateX(" + forP + "px)";
+    let horcon = document.getElementById("horcon");
+    horcon.style.transform = "translateX(" + forP + "px)";
   }
 
 
